@@ -133,7 +133,7 @@ const generateResponse = async (botMsgDiv) => {
     setTimeout(() => {
 
     //generates bots message
-    const botMsgHTML = `<img src="images/google-gemini-icon.png" class="avatar"><p class="message-text"> Just a sec...</p>`;
+    const botMsgHTML = `<img src="google-gemini-icon.png" class="avatar"><p class="message-text"> Just a sec...</p>`;
     const botMsgDiv = createMsgElement(botMsgHTML, "bot-message", "loading");
     chatsContainer.appendChild(botMsgDiv);
     scrollToBottom();
@@ -224,6 +224,7 @@ themeToggle.textContent = isLightTheme ? "dark_mode" : "light_mode";
 
 promptForm.addEventListener("submit",handleFormSubmit);
 promptForm.querySelector("#add-file-btn").addEventListener("click", ()=> fileInput.click());
+
 
 
 
